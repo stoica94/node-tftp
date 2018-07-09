@@ -1,4 +1,4 @@
-tftp
+Raspberry-Pi tftp
 ====
 
 #### Streaming TFTP client and server adapted for Raspberry-Pi Network boot ####
@@ -9,8 +9,20 @@ The Server makes a different booting folder for every Raspberry-Pi for the purpo
 
 Original project forked from [gagle/node-tftp](https://github.com/gagle/node-tftp)
 
+#### Dependencies: ####
+[copy-dir](https://www.npmjs.com/package/copy-dir). IMPORTANT: As it is, the Server creates the RP boot sub-folders <bold>WITHOUT</bold> execution rights;
+To fix this add this to /node_modules/copy-dir/index.js after line 193
 
-#### ORIGINAL DESCRIPTION: ####
+```javascript
+  fs.chmodSync(distpath, 0755, function(err) {
+      console.log(err);
+  });
+});
+```
+Now the permissions will be identical to the ones in /tftpboot
+
+
+#### ORIGINAL DESCRIPTION by Gagle: ####
 
 [![NPM version](https://badge.fury.io/js/tftp.png)](http://badge.fury.io/js/tftp "Fury Version Badge")
 [![Dependency Status](https://david-dm.org/gagle/node-tftp.png)](https://david-dm.org/gagle/node-tftp "David Dependency Manager Badge")
