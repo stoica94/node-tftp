@@ -7,6 +7,10 @@ The Server makes a different booting folder for every Raspberry-Pi for the purpo
 
 [Steps to prepare network booting for Raspberry-Pi](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/net_tutorial.md)
 
+Original project forked from [gagle/node-tftp](https://github.com/gagle/node-tftp)
+
+
+#### ORIGINAL DESCRIPTION: ####
 
 [![NPM version](https://badge.fury.io/js/tftp.png)](http://badge.fury.io/js/tftp "Fury Version Badge")
 [![Dependency Status](https://david-dm.org/gagle/node-tftp.png)](https://david-dm.org/gagle/node-tftp "David Dependency Manager Badge")
