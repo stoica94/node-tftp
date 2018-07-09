@@ -18,7 +18,6 @@ To fix this add this to /node_modules/copy-dir/index.js after line 193
   fs.chmodSync(distpath, 0755, function(err) {
       console.log(err);
   });
-});
 ```
 Now the permissions will be identical to the ones in /tftpboot
 
