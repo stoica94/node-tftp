@@ -10,7 +10,8 @@ The Server makes a different booting folder for every Raspberry-Pi for the purpo
 Original project forked from [gagle/node-tftp](https://github.com/gagle/node-tftp)
 
 #### Dependencies: ####
-[copy-dir](https://www.npmjs.com/package/copy-dir). IMPORTANT: As it is, the Server creates the RP boot sub-folders <bold>WITHOUT</bold> execution rights;
+[copy-dir](https://www.npmjs.com/package/copy-dir) <br>
+IMPORTANT: As it is, the Server creates the RP boot sub-folders <bold>WITHOUT</bold> execution rights.<br>
 To fix this add this to /node_modules/copy-dir/index.js after line 193
 
 ```javascript
