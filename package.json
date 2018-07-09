@@ -2,7 +2,11 @@
 	"name": "tftp",
 	"version": "0.1.2",
 	"description": "Streaming TFTP client and server",
-	"keywords": ["tftp", "client", "stream"],
+	"keywords": [
+		"tftp",
+		"client",
+		"stream"
+	],
 	"author": "Gabriel Llamas <gagle@outlook.com>",
 	"repository": "git://github.com/gagle/node-tftp.git",
 	"engines": {
@@ -16,5 +20,8 @@
 		"ntftp": "bin/ntftp.js"
 	},
 	"license": "MIT",
-	"main": "lib"
+	"main": "lib",
+	"devDependencies": {
+		"copy-dir": "^0.3.0"
+	}
 }
