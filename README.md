@@ -1,7 +1,12 @@
 tftp
 ====
 
-#### Streaming TFTP client and server ####
+#### Streaming TFTP client and server adapted for Raspberry-Pi Network boot ####
+
+The Server makes a different booting folder for every Raspberry-Pi for the purpose of personalisation the file-system
+
+[Steps to prepare network booting for Raspberry-Pi](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/net_tutorial.md)
+
 
 [![NPM version](https://badge.fury.io/js/tftp.png)](http://badge.fury.io/js/tftp "Fury Version Badge")
 [![Dependency Status](https://david-dm.org/gagle/node-tftp.png)](https://david-dm.org/gagle/node-tftp "David Dependency Manager Badge")
@@ -19,6 +24,8 @@ Full-featured streaming TFTP client and server. It supports most of the RFCs:
 - [7440 - Windowsize option](https://tools.ietf.org/rfc/rfc7440.txt) ✓
 - [De facto - Rollover option](http://www.compuphase.com/tftp.htm) ✓
 - `mail` and `netascii` transfer modes ✗
+
+
 
 [CLIENT](#client) | [SERVER](#server) | [Error codes](#error_codes)
 
