@@ -1,0 +1,17 @@
+{
+    "name": "mount-module",
+    "version": "1.0.0",
+    "description": "Mount operation helpers",
+    "main": "mount-commands.js",
+    "dependencies": {
+        "mount-img": "^1.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^10.5.2"
+    },
+    "scripts": {
+        "test": "tsc test-aufs.ts && node test-aufs.js"
+    },
+    "author": "Ovidiu Stoica",
+    "license": "ISC"
+}

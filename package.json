@@ -1,27 +1,29 @@
 {
-	"name": "tftp",
-	"version": "0.1.2",
-	"description": "Streaming TFTP client and server",
-	"keywords": [
-		"tftp",
-		"client",
-		"stream"
-	],
-	"author": "Gabriel Llamas <gagle@outlook.com>",
-	"repository": "git://github.com/gagle/node-tftp.git",
-	"engines": {
-		"node": ">=0.10"
-	},
-	"dependencies": {
-		"argp": "1.0.x",
-		"status-bar": "2.0.x"
-	},
-	"bin": {
-		"ntftp": "bin/ntftp.js"
-	},
-	"license": "MIT",
-	"main": "lib",
-	"devDependencies": {
-		"copy-dir": "^0.3.0"
-	}
+    "name": "tftp",
+    "version": "0.1.2",
+    "description": "Streaming TFTP client and server",
+    "keywords": [
+        "tftp",
+        "client",
+        "stream"
+    ],
+    "author": "Gabriel Llamas <gagle@outlook.com>",
+    "repository": "git://github.com/gagle/node-tftp.git",
+    "engines": {
+        "node": ">=0.10"
+    },
+    "dependencies": {
+        "argp": "1.0.x",
+        "mount-img": "^1.2.0",
+        "status-bar": "2.0.x"
+    },
+    "bin": {
+        "ntftp": "bin/ntftp.js"
+    },
+    "license": "MIT",
+    "main": "lib",
+    "devDependencies": {
+        "@types/node": "^10.5.2",
+        "copy-dir": "^0.3.0"
+    }
 }
